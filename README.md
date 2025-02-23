@@ -1,1 +1,1 @@
-# AI-Powered-Mock_Interview-Platform
+# AI-Powered-Mock-Interview-Platform
