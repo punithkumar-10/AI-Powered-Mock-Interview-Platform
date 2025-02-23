@@ -18,6 +18,6 @@ firebase = pyrebase.initialize_app(firebaseConfig)
 pb_auth = firebase.auth()
 
 # Initialize Firebase Admin for Firestore
-cred = credentials.Certificate("path/to/serviceAccountKey.json")
+cred = credentials.Certificate("ai-powered-mock-interview-app-firebase-adminsdk-fbsvc-421f96900e.json")
 firebase_admin.initialize_app(cred)
 fs_client = firestore.client()
