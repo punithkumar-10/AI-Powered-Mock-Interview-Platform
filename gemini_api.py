@@ -1,11 +1,11 @@
 import requests
 import streamlit as st
 
-# Endpoints for your FastAPI Gemini service (update if deployed differently)
+# Endpoints for your FastAPI Gemini service
 GENERATE_ENDPOINT = "http://localhost:8000/generate"
 FEEDBACK_ENDPOINT = "http://localhost:8000/feedback"
 
-# Your provided API key for securing the endpoints
+# API key for requests (must match the key expected by the FastAPI service)
 API_KEY = "AIzaSyBgHX0SOzFsv6O4p-gxeoM-FCGTpcuTHmY"
 HEADERS = {"X-API-Key": API_KEY}
 
@@ -16,7 +16,6 @@ def call_gemini_api(interview_details):
     try:
         response = requests.post(GENERATE_ENDPOINT, json=interview_details, headers=HEADERS)
         if response.status_code == 200:
-            # Expecting JSON with a 'questions' field.
             return response.json().get("questions", [])
         else:
             st.error("Error calling Gemini API: " + response.text)
@@ -32,7 +31,6 @@ def call_gemini_feedback_api(answers_payload):
     try:
         response = requests.post(FEEDBACK_ENDPOINT, json=answers_payload, headers=HEADERS)
         if response.status_code == 200:
-            # Expected to have 'overall_score' and 'detailed_feedback' in the response
             return response.json()
         else:
             st.error("Error retrieving feedback from Gemini API: " + response.text)
