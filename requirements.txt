@@ -1,1 +1,4 @@
-# Dependencies list
+streamlit
+gTTS
+SpeechRecognition
+langchain-google-genai
