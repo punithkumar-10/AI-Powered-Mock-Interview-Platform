@@ -1,2 +1,3 @@
 *.venv
-*ai-powered-mock-interview-app-firebase-adminsdk-fbsvc-421f96900e.json
+*config.py
+*__pycache__
