@@ -13,7 +13,7 @@ The AI Mock Interview Platform is an intelligent interview simulation tool that 
 - **Firebase Integration**: Stores candidate details securely.
 - **Clerk Authentication**: Ensures secure user login and session handling.
 
-🎥 **Demo1 Video:** [Click here to watch](https://github.com/punithkumar-10/AI-Powered-Mock-Interview-Platform/blob/main/Demo/Demo1.mp4)
+🎥 **Demo1 Video:** [Click here to watch](https://github.com/user-attachments/assets/c1d51377-d5c9-4701-bb9f-8f50d93428f7)
 🎥 **Demo2 Video:** [Click here to watch](https://github.com/punithkumar-10/AI-Powered-Mock-Interview-Platform/blob/main/Demo/Demo2.mp4)
 
 ## 🛠 Installation
