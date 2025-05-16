@@ -10,8 +10,6 @@ The AI Mock Interview Platform is an intelligent interview simulation tool that 
 - **Real-Time Audio & Video Capture**: Supports camera and microphone input.
 - **AI Feedback Analysis**: Evaluates responses and provides improvement suggestions.
 - **Streamlit-Based UI**: User-friendly web interface.
-- **Firebase Integration**: Stores candidate details securely.
-- **Clerk Authentication**: Ensures secure user login and session handling.
 
 ---
 
